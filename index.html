@@ -1,19 +1,151 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Alert System</title>
+    <title>Job Alert System | CV Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Job Alert System</h1>
-        <p>Join our Telegram channel for job alerts and download a free CV!</p>
-        <a href="https://t.me/YourTelegramChannel" target="_blank">Join Telegram</a>
-        <a href="https://payhip.com/YourProPack" target="_blank">Get Pro Pack</a>
-        <a href="freeCV.pdf" download>Download Free CV</a>
+    <header class="hero">
+        <nav class="topbar" aria-label="Primary navigation">
+            <a class="brand" href="#top" aria-label="Job Alert System home">JobAlert</a>
+            <div class="nav-links">
+                <a href="#generator">CV Generator</a>
+                <a href="https://t.me/YourTelegramChannel" target="_blank" rel="noreferrer">Join Telegram</a>
+                <a href="https://payhip.com/YourProPack" target="_blank" rel="noreferrer">Get Pro Pack</a>
+            </div>
+        </nav>
+
+        <section class="hero-content" id="top">
+            <p class="eyebrow">Free career tool</p>
+            <h1>Create a clean, job-ready CV in minutes.</h1>
+            <p class="hero-copy">Fill in your details, preview your CV instantly, and print or save it as a PDF for your next application.</p>
+            <a class="primary-action" href="#generator">Start building</a>
+        </section>
     </header>
+
+    <main>
+        <section class="intro" aria-labelledby="intro-heading">
+            <h2 id="intro-heading">Everything you need for faster applications</h2>
+            <div class="features">
+                <article>
+                    <span aria-hidden="true">⚡</span>
+                    <h3>Live preview</h3>
+                    <p>See updates as you type so your CV stays polished and complete.</p>
+                </article>
+                <article>
+                    <span aria-hidden="true">📄</span>
+                    <h3>PDF ready</h3>
+                    <p>Use your browser print dialog to save the final CV as a PDF.</p>
+                </article>
+                <article>
+                    <span aria-hidden="true">🎯</span>
+                    <h3>Focused format</h3>
+                    <p>Highlight your summary, skills, experience, education, and projects.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="generator" id="generator" aria-labelledby="generator-heading">
+            <div class="form-panel">
+                <p class="eyebrow">CV builder</p>
+                <h2 id="generator-heading">Add your information</h2>
+                <form id="cv-form">
+                    <label>
+                        Full name
+                        <input id="name" name="name" type="text" placeholder="Alex Morgan" required>
+                    </label>
+                    <label>
+                        Target role
+                        <input id="role" name="role" type="text" placeholder="Customer Support Specialist">
+                    </label>
+                    <div class="field-grid">
+                        <label>
+                            Email
+                            <input id="email" name="email" type="email" placeholder="alex@example.com">
+                        </label>
+                        <label>
+                            Phone
+                            <input id="phone" name="phone" type="tel" placeholder="+1 555 123 4567">
+                        </label>
+                    </div>
+                    <label>
+                        Location
+                        <input id="location" name="location" type="text" placeholder="New York, NY">
+                    </label>
+                    <label>
+                        Professional summary
+                        <textarea id="summary" name="summary" rows="4" placeholder="Motivated professional with experience in customer service, operations, and problem solving."></textarea>
+                    </label>
+                    <label>
+                        Skills <span class="hint">Separate with commas</span>
+                        <input id="skills" name="skills" type="text" placeholder="Communication, Excel, CRM, Scheduling">
+                    </label>
+                    <label>
+                        Work experience
+                        <textarea id="experience" name="experience" rows="6" placeholder="Company — Role (2023–Present)&#10;• Improved response times by 25%&#10;• Managed daily customer requests"></textarea>
+                    </label>
+                    <label>
+                        Education
+                        <textarea id="education" name="education" rows="3" placeholder="Diploma in Business Administration — City College"></textarea>
+                    </label>
+                    <label>
+                        Projects or certifications
+                        <textarea id="projects" name="projects" rows="3" placeholder="Google Data Analytics Certificate; Volunteer hiring coordinator"></textarea>
+                    </label>
+                    <div class="button-row">
+                        <button type="button" id="load-sample">Load sample</button>
+                        <button type="button" id="clear-form">Clear</button>
+                        <button type="button" class="primary-button" id="print-cv">Print / Save PDF</button>
+                    </div>
+                </form>
+            </div>
+
+            <aside class="preview-panel" aria-labelledby="preview-heading">
+                <div class="preview-toolbar">
+                    <h2 id="preview-heading">Live preview</h2>
+                    <span>ATS friendly</span>
+                </div>
+                <article class="cv-preview" id="cv-preview" aria-live="polite">
+                    <header class="cv-header">
+                        <h2 data-preview="name">Your Name</h2>
+                        <p data-preview="role">Target Role</p>
+                        <div class="contact-line" data-preview="contact">email@example.com · +1 555 000 0000 · City, Country</div>
+                    </header>
+                    <section>
+                        <h3>Profile</h3>
+                        <p data-preview="summary">Write a short professional summary that introduces your strengths, experience, and career goals.</p>
+                    </section>
+                    <section>
+                        <h3>Skills</h3>
+                        <ul class="skill-list" data-preview="skills">
+                            <li>Communication</li>
+                            <li>Problem solving</li>
+                            <li>Teamwork</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Experience</h3>
+                        <div class="preserve-lines" data-preview="experience">Add recent roles, achievements, and measurable results.</div>
+                    </section>
+                    <section>
+                        <h3>Education</h3>
+                        <div class="preserve-lines" data-preview="education">Add your degree, school, training, or relevant coursework.</div>
+                    </section>
+                    <section>
+                        <h3>Projects & Certifications</h3>
+                        <div class="preserve-lines" data-preview="projects">Add certificates, portfolio projects, or volunteer experience.</div>
+                    </section>
+                </article>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>Join our Telegram channel for job alerts and upgrade with the pro pack when you need more templates.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
