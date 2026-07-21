@@ -1,3 +1,27 @@
+
+const menuToggle = document.querySelector('.menu-toggle');
+const siteMenu = document.querySelector('#site-menu');
+const filterButtons = document.querySelectorAll('.filter');
+const jobCards = document.querySelectorAll('.job-card');
+
+if (menuToggle && siteMenu) {
+    menuToggle.addEventListener('click', () => {
+        const isOpen = siteMenu.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+}
+
+filterButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        const selected = button.dataset.filter;
+        filterButtons.forEach((item) => item.classList.toggle('active', item === button));
+        jobCards.forEach((card) => {
+            const categories = card.dataset.category.split(' ');
+            card.hidden = selected !== 'all' && !categories.includes(selected);
+        });
+    });
+});
+
 const form = document.querySelector('#cv-form');
 const preview = document.querySelector('#cv-preview');
 
