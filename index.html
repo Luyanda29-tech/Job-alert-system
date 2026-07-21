@@ -1,19 +1,269 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Alert System</title>
+    <meta name="description" content="CareerPulse is a modern career platform prototype with job alerts, AI CV tools, dashboards, templates, and application tracking.">
+    <meta name="theme-color" content="#111827">
+    <title>CareerPulse | AI Career Platform</title>
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Job Alert System</h1>
-        <p>Join our Telegram channel for job alerts and download a free CV!</p>
-        <a href="https://t.me/YourTelegramChannel" target="_blank">Join Telegram</a>
-        <a href="https://payhip.com/YourProPack" target="_blank">Get Pro Pack</a>
-        <a href="freeCV.pdf" download>Download Free CV</a>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="site-header" id="top">
+        <nav class="navbar glass" aria-label="Primary navigation">
+            <a class="logo" href="#top" aria-label="CareerPulse home"><span>CP</span>CareerPulse</a>
+            <button class="menu-toggle" type="button" aria-controls="site-menu" aria-expanded="false">☰</button>
+            <div class="site-menu" id="site-menu">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#ai-tools">AI Tools</a>
+                <a href="#templates">Templates</a>
+                <a href="#jobs">Jobs</a>
+                <a href="#tracker">Tracker</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" type="button" aria-label="Switch color theme">🌙</button>
+                <button class="button ghost open-auth" type="button">Sign in</button>
+                <a class="button primary" href="#pricing">Go premium</a>
+            </div>
+        </nav>
+
+        <section class="hero section-shell">
+            <div class="hero-copy reveal">
+                <p class="eyebrow">AI-powered job search operating system</p>
+                <h1>Build better CVs, track every application, and land interviews faster.</h1>
+                <p>CareerPulse now previews a modern SaaS experience with glassmorphism, dashboard workflows, AI writing tools, job alerts, resume analytics, templates, and application tracking.</p>
+                <div class="hero-actions">
+                    <a class="button primary" href="#cv-builder">Start building</a>
+                    <button class="button secondary open-auth" type="button">Create free account</button>
+                </div>
+                <div class="trust-row" aria-label="Platform highlights">
+                    <span>✓ PWA-ready</span>
+                    <span>✓ ATS-focused</span>
+                    <span>✓ Mobile-first</span>
+                </div>
+            </div>
+            <aside class="hero-console glass reveal" aria-label="Career dashboard preview">
+                <div class="console-top"><span></span><span></span><span></span></div>
+                <div class="score-ring" aria-label="Resume score 86 percent"><strong>86</strong><small>CV Score</small></div>
+                <div class="console-list">
+                    <p><span class="icon">✨</span> AI summary improved</p>
+                    <p><span class="icon">🎯</span> 14 ATS keywords found</p>
+                    <p><span class="icon">🔔</span> 9 matching jobs today</p>
+                </div>
+            </aside>
+        </section>
     </header>
+
+    <main>
+        <section class="stats section-shell" aria-label="CareerPulse statistics">
+            <article class="glass"><strong>50+</strong><span>CV template concepts</span></article>
+            <article class="glass"><strong>8</strong><span>AI writing workflows</span></article>
+            <article class="glass"><strong>6</strong><span>Application stages</span></article>
+            <article class="glass"><strong>24/7</strong><span>Alert channels</span></article>
+        </section>
+
+        <section class="dashboard section-shell" id="dashboard">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Modern dashboard</p>
+                <h2>Your career command centre</h2>
+                <p>Manage saved CVs, job alerts, applications, interviews, downloads, and profile progress from one responsive dashboard.</p>
+            </div>
+            <div class="dashboard-grid">
+                <article class="dashboard-card wide glass reveal">
+                    <div class="card-heading"><h3>Profile completion</h3><span>78%</span></div>
+                    <div class="progress"><span style="width: 78%"></span></div>
+                    <ul class="check-list">
+                        <li>Verified email</li>
+                        <li>Uploaded certificates</li>
+                        <li>Add portfolio links next</li>
+                    </ul>
+                </article>
+                <article class="dashboard-card glass reveal"><span class="big-icon">📄</span><strong>3</strong><p>Saved CVs</p></article>
+                <article class="dashboard-card glass reveal"><span class="big-icon">💼</span><strong>18</strong><p>Saved jobs</p></article>
+                <article class="dashboard-card glass reveal"><span class="big-icon">📥</span><strong>42</strong><p>Downloads</p></article>
+                <article class="dashboard-card wide glass reveal">
+                    <div class="card-heading"><h3>Skeleton loading preview</h3><span>Fast UI</span></div>
+                    <div class="skeleton-list" aria-label="Loading placeholder preview">
+                        <span></span><span></span><span></span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="ai-tools section-shell" id="ai-tools">
+            <div class="section-heading reveal">
+                <p class="eyebrow">AI CV Builder</p>
+                <h2>Writing help without leaving the page</h2>
+                <p>Generate professional summaries, improve work experience bullets, suggest skills, tailor keywords to a job description, and score your CV.</p>
+            </div>
+            <div class="tool-grid">
+                <article class="tool-card glass reveal" data-tool="summary"><span>✨</span><h3>Summary writer</h3><p>Create a professional profile from your target role and experience.</p></article>
+                <article class="tool-card glass reveal" data-tool="experience"><span>🛠️</span><h3>Bullet improver</h3><p>Turn basic duties into outcome-focused achievement statements.</p></article>
+                <article class="tool-card glass reveal" data-tool="skills"><span>🧠</span><h3>Skill suggester</h3><p>Recommend role-specific technical, soft, and ATS keywords.</p></article>
+                <article class="tool-card glass reveal" data-tool="interview"><span>🎙️</span><h3>Interview coach</h3><p>Generate interview prompts based on your CV and target job.</p></article>
+            </div>
+            <div class="ai-output glass" id="ai-output" aria-live="polite">Select an AI tool to preview smart career guidance.</div>
+        </section>
+
+        <section class="templates section-shell" id="templates">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Professional CV templates</p>
+                <h2>Choose a format for every career path</h2>
+            </div>
+            <div class="template-controls" aria-label="Template filters">
+                <button class="template-filter active" type="button" data-template="all">All</button>
+                <button class="template-filter" type="button" data-template="ats">ATS</button>
+                <button class="template-filter" type="button" data-template="creative">Creative</button>
+                <button class="template-filter" type="button" data-template="executive">Executive</button>
+                <button class="template-filter" type="button" data-template="student">Student</button>
+            </div>
+            <div class="template-grid">
+                <article class="template-card glass" data-template="ats"><div class="template-preview minimal"></div><h3>ATS Classic</h3><p>No-photo layout · clean keywords</p></article>
+                <article class="template-card glass" data-template="creative"><div class="template-preview creative"></div><h3>Creative Slate</h3><p>Editable colors · portfolio-ready</p></article>
+                <article class="template-card glass" data-template="executive"><div class="template-preview executive"></div><h3>Executive Pro</h3><p>Leadership profile · premium spacing</p></article>
+                <article class="template-card glass" data-template="student"><div class="template-preview student"></div><h3>Graduate Launch</h3><p>Projects · internships · coursework</p></article>
+            </div>
+        </section>
+
+        <section class="builder section-shell" id="cv-builder" aria-labelledby="builder-title">
+            <div class="builder-form glass reveal">
+                <p class="eyebrow">Live CV generator</p>
+                <h2 id="builder-title">Create, score, and export your CV</h2>
+                <form id="cv-form">
+                    <div class="two-columns">
+                        <label>Full name<input id="name" name="name" type="text" placeholder="Alex Morgan"></label>
+                        <label>Target role<input id="role" name="role" type="text" placeholder="Operations Coordinator"></label>
+                    </div>
+                    <div class="two-columns">
+                        <label>Email<input id="email" name="email" type="email" placeholder="alex@example.com"></label>
+                        <label>Phone<input id="phone" name="phone" type="tel" placeholder="+1 555 123 4567"></label>
+                    </div>
+                    <label>Location<input id="location" name="location" type="text" placeholder="Dallas, TX"></label>
+                    <label>Job description keywords<input id="job-keywords" name="job-keywords" type="text" placeholder="CRM, stakeholder management, reporting"></label>
+                    <label>Professional summary<textarea id="summary" name="summary" rows="4" placeholder="Briefly describe your experience, strengths, and goals."></textarea></label>
+                    <label>Skills <small>Separate with commas</small><input id="skills" name="skills" type="text" placeholder="Communication, Excel, CRM, Scheduling"></label>
+                    <label>Experience<textarea id="experience" name="experience" rows="5" placeholder="Company — Role&#10;• Add measurable achievements"></textarea></label>
+                    <div class="two-columns">
+                        <label>Education<textarea id="education" name="education" rows="3" placeholder="Degree or training — Institution"></textarea></label>
+                        <label>Projects / certifications<textarea id="projects" name="projects" rows="3" placeholder="Certificate, portfolio project, or volunteer work"></textarea></label>
+                    </div>
+                    <div class="export-row">
+                        <select id="paper-size" aria-label="Paper size"><option>A4 PDF</option><option>US Letter PDF</option><option>TXT Export</option><option>DOCX Export</option></select>
+                        <button type="button" id="load-sample">Load sample</button>
+                        <button type="button" id="clear-form">Clear</button>
+                        <button class="primary" type="button" id="print-cv">Download PDF</button>
+                    </div>
+                </form>
+            </div>
+            <aside class="preview-card glass reveal" aria-labelledby="preview-title">
+                <div class="preview-heading">
+                    <h2 id="preview-title">CV Preview</h2>
+                    <span id="cv-score">Score 24%</span>
+                </div>
+                <article class="cv-preview" id="cv-preview" aria-live="polite">
+                    <header>
+                        <h2 data-preview="name">Your Name</h2>
+                        <p data-preview="role">Target Role</p>
+                        <div data-preview="contact">email@example.com · +1 555 000 0000 · City, Country</div>
+                    </header>
+                    <section><h3>Profile</h3><p data-preview="summary">Add a short summary to introduce your value.</p></section>
+                    <section><h3>Skills</h3><ul class="skill-list" data-preview="skills"><li>Communication</li><li>Problem solving</li><li>Teamwork</li></ul></section>
+                    <section><h3>Experience</h3><div class="preserve-lines" data-preview="experience">Add your most relevant experience and results.</div></section>
+                    <section><h3>Education</h3><div class="preserve-lines" data-preview="education">Add education, training, or coursework.</div></section>
+                    <section><h3>Projects & Certifications</h3><div class="preserve-lines" data-preview="projects">Add certificates, projects, or volunteer work.</div></section>
+                </article>
+            </aside>
+        </section>
+
+        <section class="analytics section-shell" id="analytics">
+            <div class="section-heading reveal"><p class="eyebrow">Resume analytics</p><h2>Know what to improve before applying</h2></div>
+            <div class="analytics-grid">
+                <article class="glass"><span>ATS compatibility</span><strong id="ats-score">72%</strong><div class="progress"><span style="width:72%"></span></div></article>
+                <article class="glass"><span>Readability</span><strong>Good</strong><p>Keep sentences short and achievement-led.</p></article>
+                <article class="glass"><span>Missing keywords</span><strong id="missing-keywords">3</strong><p>Add role-specific terms from the job description.</p></article>
+                <article class="glass"><span>Grammar</span><strong>2 tips</strong><p>Use consistent tense for previous roles.</p></article>
+            </div>
+        </section>
+
+        <section class="jobs section-shell" id="jobs">
+            <div class="section-heading reveal"><p class="eyebrow">Job board & alerts</p><h2>Search roles and set custom alerts</h2></div>
+            <div class="job-search glass">
+                <input id="job-search" type="search" placeholder="Search by role, keyword, or company" aria-label="Search jobs">
+                <select id="job-location" aria-label="Filter by location"><option value="all">All locations</option><option value="remote">Remote</option><option value="onsite">On-site</option></select>
+                <select id="job-type" aria-label="Filter by job type"><option value="all">All types</option><option value="full-time">Full-time</option><option value="internship">Internship</option><option value="government">Government</option></select>
+            </div>
+            <div class="job-grid" id="job-grid">
+                <article class="job-card glass" data-location="remote" data-type="full-time" data-text="customer success associate remote saas crm"><span>Remote</span><h3>Customer Success Associate</h3><p>Support SaaS users, handle onboarding calls, and document common product questions.</p><a href="#tracker">Track application</a></article>
+                <article class="job-card glass" data-location="onsite" data-type="government" data-text="administrative assistant government office reporting"><span>Government</span><h3>Administrative Assistant</h3><p>Coordinate calendars, prepare reports, and support office operations for a public-sector team.</p><a href="#tracker">Track application</a></article>
+                <article class="job-card glass" data-location="remote" data-type="internship" data-text="junior web developer internship html css javascript"><span>Internship</span><h3>Junior Web Developer</h3><p>Build landing pages, fix UI bugs, and collaborate on responsive layouts.</p><a href="#tracker">Track application</a></article>
+            </div>
+            <div class="alert-channels glass">
+                <span>🔔 Email alerts</span><span>📲 Telegram alerts</span><span>💬 WhatsApp alerts</span><span>⚡ Push notifications</span>
+            </div>
+        </section>
+
+        <section class="tracker section-shell" id="tracker">
+            <div class="section-heading reveal"><p class="eyebrow">Application tracker</p><h2>Move applications from wishlist to offer</h2></div>
+            <div class="kanban" aria-label="Application tracker stages">
+                <article class="glass"><h3>Wishlist</h3><p>Junior Analyst</p><p>UX Intern</p></article>
+                <article class="glass"><h3>Applied</h3><p>Admin Assistant</p><p>Support Specialist</p></article>
+                <article class="glass"><h3>Interview</h3><p>Web Developer</p></article>
+                <article class="glass"><h3>Offer</h3><p>Operations Coordinator</p></article>
+            </div>
+        </section>
+
+        <section class="resources section-shell" id="resources">
+            <div class="section-heading reveal"><p class="eyebrow">Learning centre & portfolio</p><h2>Grow your career profile</h2></div>
+            <div class="resource-grid">
+                <article class="glass"><span>📚</span><h3>Career guides</h3><p>CV writing, interview prep, salary guides, quizzes, and free templates.</p></article>
+                <article class="glass"><span>🧩</span><h3>Portfolio builder</h3><p>Showcase projects, certificates, GitHub, LinkedIn, and skills in a public profile.</p></article>
+                <article class="glass"><span>🔐</span><h3>Security controls</h3><p>Privacy settings, secure login, verification, encrypted storage planning, and GDPR/POPIA readiness.</p></article>
+            </div>
+        </section>
+
+        <section class="admin section-shell" id="admin">
+            <div class="section-heading reveal"><p class="eyebrow">Admin & business features</p><h2>Ready for employers and growth</h2></div>
+            <div class="admin-grid">
+                <article class="glass"><h3>Admin panel</h3><p>User management, job management, analytics, content, notifications, and support tickets.</p></article>
+                <article class="glass"><h3>Employer portal</h3><p>Company profiles, job posting, candidate search, recruiter messaging, and applicant management.</p></article>
+                <article class="glass"><h3>Integrations</h3><p>LinkedIn, GitHub, Google Drive, Dropbox, OneDrive, Telegram, Gmail, and payments.</p></article>
+            </div>
+        </section>
+
+        <section class="pricing section-shell" id="pricing">
+            <div class="section-heading reveal"><p class="eyebrow">Premium features</p><h2>Simple plans for a growing career platform</h2></div>
+            <div class="pricing-grid">
+                <article class="price-card glass"><span>Free</span><strong>$0</strong><p>One CV, job alerts, basic analytics, and PDF export.</p><button class="button ghost open-auth" type="button">Create account</button></article>
+                <article class="price-card featured glass"><span>Pro</span><strong>$9</strong><p>Unlimited CVs, premium templates, AI tools, cover letters, and priority support.</p><a class="button primary" href="https://payhip.com/YourProPack" target="_blank" rel="noreferrer">Upgrade</a></article>
+                <article class="price-card glass"><span>Employer</span><strong>$49</strong><p>Post jobs, search candidates, manage applicants, and message talent.</p><button class="button ghost" type="button">Contact sales</button></article>
+            </div>
+        </section>
+    </main>
+
+    <dialog class="auth-modal glass" id="auth-modal" aria-labelledby="auth-title">
+        <form method="dialog">
+            <button class="modal-close" value="cancel" aria-label="Close authentication dialog">×</button>
+            <p class="eyebrow">Secure authentication</p>
+            <h2 id="auth-title">Create your CareerPulse account</h2>
+            <label>Email address<input type="email" placeholder="you@example.com"></label>
+            <label>Password<input type="password" placeholder="••••••••"></label>
+            <button class="button primary" value="default">Register with email</button>
+            <button class="button ghost" value="google">Continue with Google</button>
+            <button class="button ghost" value="apple">Continue with Apple</button>
+            <a href="#top">Forgot password?</a>
+            <p class="fine-print">Includes email verification and optional two-factor authentication in the production roadmap.</p>
+        </form>
+    </dialog>
+
+    <footer class="site-footer">
+        <a class="logo" href="#top"><span>CP</span>CareerPulse</a>
+        <p>Modern career platform prototype for CVs, jobs, alerts, analytics, portfolios, and recruiting.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
