@@ -1,0 +1,10 @@
+{
+  "name": "CareerPulse AI Career Platform",
+  "short_name": "CareerPulse",
+  "description": "AI CV builder, job alerts, application tracker, and career dashboard prototype.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#090d18",
+  "theme_color": "#111827",
+  "icons": []
+}
