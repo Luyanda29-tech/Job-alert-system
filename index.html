@@ -3,171 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CareerPulse | Job Alerts & CV Builder</title>
+    <title>RideConnect | Product & Architecture Plan</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="site-header" id="top">
         <nav class="navbar" aria-label="Primary navigation">
-            <a class="logo" href="#top" aria-label="CareerPulse home"><span>CP</span>CareerPulse</a>
+            <a class="logo" href="#top" aria-label="RideConnect planning home"><span>RC</span>RideConnect</a>
             <button class="menu-toggle" type="button" aria-controls="site-menu" aria-expanded="false">Menu</button>
             <div class="site-menu" id="site-menu">
-                <a href="#jobs">Jobs</a>
-                <a href="#cv-builder">CV Builder</a>
-                <a href="#resources">Resources</a>
-                <a href="#pricing">Pricing</a>
-                <a class="nav-cta" href="#join">Join free</a>
+                <a href="#identity">Identity</a>
+                <a href="#users">Users</a>
+                <a href="#flow">Ride flow</a>
+                <a href="#architecture">Architecture</a>
+                <a href="#roadmap">Roadmap</a>
             </div>
         </nav>
 
         <section class="hero section-shell">
             <div class="hero-copy">
-                <p class="eyebrow">Job alerts, CV tools, and career guidance</p>
-                <h1>Find roles faster with a website built for job seekers.</h1>
-                <p>CareerPulse combines curated job alerts, a printable CV generator, and practical application resources so candidates can move from discovery to submission in one place.</p>
+                <p class="eyebrow">Startup blueprint</p>
+                <h1>A fast local ride platform designed before the first sprint.</h1>
+                <p>RideConnect is the working name for a passenger, driver, and admin ecosystem focused on simple cash-first rides, reliable live tracking, and a scalable technical foundation.</p>
                 <div class="hero-actions">
-                    <a class="button primary" href="#join">Get job alerts</a>
-                    <a class="button secondary" href="#cv-builder">Build my CV</a>
+                    <a class="button primary" href="#architecture">View architecture</a>
+                    <a class="button secondary" href="#roadmap">See MVP scope</a>
                 </div>
             </div>
-            <aside class="hero-card" aria-label="Job alert performance snapshot">
+            <aside class="hero-card" aria-label="Version one delivery focus">
                 <div class="pulse-dot"></div>
-                <p>Today’s shortlist</p>
-                <h2>128 fresh roles</h2>
+                <p>Version 1 focus</p>
+                <h2>6 core workflows</h2>
                 <ul>
-                    <li><strong>Remote:</strong> 42 listings</li>
-                    <li><strong>Entry-level:</strong> 37 listings</li>
-                    <li><strong>Hiring now:</strong> 19 urgent posts</li>
+                    <li><strong>Access:</strong> Login and registration</li>
+                    <li><strong>Dispatch:</strong> Request and accept rides</li>
+                    <li><strong>Operations:</strong> Live tracking and trip completion</li>
                 </ul>
             </aside>
         </section>
     </header>
 
     <main>
-        <section class="stats section-shell" aria-label="CareerPulse statistics">
-            <article><strong>12k+</strong><span>Subscribers</span></article>
-            <article><strong>4.8/5</strong><span>Resource rating</span></article>
-            <article><strong>3 min</strong><span>Average CV setup</span></article>
-            <article><strong>Daily</strong><span>Telegram alerts</span></article>
+        <section class="stats section-shell" aria-label="RideConnect principles">
+            <article><strong>Fast</strong><span>Low-friction ride requests</span></article>
+            <article><strong>Simple</strong><span>Clear passenger and driver flows</span></article>
+            <article><strong>Reliable</strong><span>Location, status, and trip state sync</span></article>
+            <article><strong>Local</strong><span>Built for town-level mobility</span></article>
         </section>
 
-        <section class="section-shell section-heading" id="jobs">
-            <p class="eyebrow">Featured opportunities</p>
-            <h2>Browse job alerts by category</h2>
-            <p>Use the quick filters to explore the kind of roles this website can promote to your community.</p>
-            <div class="filter-bar" aria-label="Job filters">
-                <button class="filter active" type="button" data-filter="all">All</button>
-                <button class="filter" type="button" data-filter="remote">Remote</button>
-                <button class="filter" type="button" data-filter="entry">Entry-level</button>
-                <button class="filter" type="button" data-filter="tech">Tech</button>
-            </div>
-            <div class="job-grid" id="job-grid">
-                <article class="job-card" data-category="remote tech">
-                    <span>Remote</span>
-                    <h3>Customer Success Associate</h3>
-                    <p>Support SaaS users, handle onboarding calls, and document common product questions.</p>
-                    <a href="#join">Send me alerts</a>
-                </article>
-                <article class="job-card" data-category="entry">
-                    <span>Entry-level</span>
-                    <h3>Administrative Assistant</h3>
-                    <p>Coordinate calendars, prepare reports, and support office operations for a growing team.</p>
-                    <a href="#join">Send me alerts</a>
-                </article>
-                <article class="job-card" data-category="tech remote">
-                    <span>Tech</span>
-                    <h3>Junior Web Developer</h3>
-                    <p>Build landing pages, fix UI bugs, and collaborate with designers on responsive layouts.</p>
-                    <a href="#join">Send me alerts</a>
-                </article>
+        <section class="section-shell section-heading" id="identity">
+            <p class="eyebrow">Project identity</p>
+            <h2>Use RideConnect as the temporary product name.</h2>
+            <p>The final brand should be short, memorable, easy to spell, and available across domains, app stores, and social channels before launch.</p>
+            <div class="name-grid" aria-label="Brand name options">
+                <span>RideConnect</span><span>GoRide</span><span>SwiftRide</span><span>LinkRide</span><span>RideNow</span><span>MoveMe</span><span>Zippy</span><span>HopOn</span><span>RideWave</span><span>GoLocal</span>
             </div>
         </section>
 
-        <section class="builder section-shell" id="cv-builder" aria-labelledby="builder-title">
-            <div class="builder-form">
-                <p class="eyebrow">Free CV generator</p>
-                <h2 id="builder-title">Create a printable CV</h2>
-                <form id="cv-form">
-                    <div class="two-columns">
-                        <label>Full name<input id="name" name="name" type="text" placeholder="Alex Morgan"></label>
-                        <label>Target role<input id="role" name="role" type="text" placeholder="Operations Coordinator"></label>
-                    </div>
-                    <div class="two-columns">
-                        <label>Email<input id="email" name="email" type="email" placeholder="alex@example.com"></label>
-                        <label>Phone<input id="phone" name="phone" type="tel" placeholder="+1 555 123 4567"></label>
-                    </div>
-                    <label>Location<input id="location" name="location" type="text" placeholder="Dallas, TX"></label>
-                    <label>Professional summary<textarea id="summary" name="summary" rows="4" placeholder="Briefly describe your experience, strengths, and goals."></textarea></label>
-                    <label>Skills <small>Separate with commas</small><input id="skills" name="skills" type="text" placeholder="Communication, Excel, CRM, Scheduling"></label>
-                    <label>Experience<textarea id="experience" name="experience" rows="5" placeholder="Company — Role&#10;• Add measurable achievements"></textarea></label>
-                    <div class="two-columns">
-                        <label>Education<textarea id="education" name="education" rows="3" placeholder="Degree or training — Institution"></textarea></label>
-                        <label>Projects / certifications<textarea id="projects" name="projects" rows="3" placeholder="Certificate, portfolio project, or volunteer work"></textarea></label>
-                    </div>
-                    <div class="button-row">
-                        <button type="button" id="load-sample">Load sample</button>
-                        <button type="button" id="clear-form">Clear</button>
-                        <button class="primary" type="button" id="print-cv">Print / Save PDF</button>
-                    </div>
-                </form>
-            </div>
-            <aside class="preview-card" aria-labelledby="preview-title">
-                <div class="preview-heading">
-                    <h2 id="preview-title">CV Preview</h2>
-                    <span>ATS-friendly</span>
-                </div>
-                <article class="cv-preview" id="cv-preview" aria-live="polite">
-                    <header>
-                        <h2 data-preview="name">Your Name</h2>
-                        <p data-preview="role">Target Role</p>
-                        <div data-preview="contact">email@example.com · +1 555 000 0000 · City, Country</div>
-                    </header>
-                    <section><h3>Profile</h3><p data-preview="summary">Add a short summary to introduce your value.</p></section>
-                    <section><h3>Skills</h3><ul class="skill-list" data-preview="skills"><li>Communication</li><li>Problem solving</li><li>Teamwork</li></ul></section>
-                    <section><h3>Experience</h3><div class="preserve-lines" data-preview="experience">Add your most relevant experience and results.</div></section>
-                    <section><h3>Education</h3><div class="preserve-lines" data-preview="education">Add education, training, or coursework.</div></section>
-                    <section><h3>Projects & Certifications</h3><div class="preserve-lines" data-preview="projects">Add certificates, projects, or volunteer work.</div></section>
+        <section class="section-shell section-heading" id="users">
+            <p class="eyebrow">User roles</p>
+            <h2>Three experiences, one shared trip system.</h2>
+            <div class="role-grid">
+                <article class="role-card passenger">
+                    <span>Passenger</span>
+                    <h3>Request, track, pay, and rate.</h3>
+                    <ul>
+                        <li>Register and login</li>
+                        <li>Choose pickup and destination</li>
+                        <li>View driver details and live arrival</li>
+                        <li>Pay by cash first and review ride history</li>
+                    </ul>
                 </article>
-            </aside>
+                <article class="role-card driver">
+                    <span>Driver</span>
+                    <h3>Go online, accept rides, and earn.</h3>
+                    <ul>
+                        <li>Register and upload documents</li>
+                        <li>Go online or offline</li>
+                        <li>Accept or reject ride requests</li>
+                        <li>Navigate, complete trips, and view earnings</li>
+                    </ul>
+                </article>
+                <article class="role-card admin">
+                    <span>Admin</span>
+                    <h3>Control safety, fares, and operations.</h3>
+                    <ul>
+                        <li>Approve drivers and suspend accounts</li>
+                        <li>View trips, payments, and reports</li>
+                        <li>Manage fare rules and platform settings</li>
+                        <li>Monitor earnings and marketplace health</li>
+                    </ul>
+                </article>
+            </div>
         </section>
 
-        <section class="resources section-shell" id="resources">
-            <div class="section-heading">
-                <p class="eyebrow">Application resources</p>
-                <h2>Turn alerts into interviews</h2>
-            </div>
-            <div class="resource-grid">
-                <article><h3>CV checklist</h3><p>Review contact details, keyword alignment, quantified wins, and formatting before applying.</p></article>
-                <article><h3>Cover letter prompts</h3><p>Use role-specific prompts to explain your fit without starting from a blank page.</p></article>
-                <article><h3>Interview prep</h3><p>Practice common screening questions and prepare concise STAR stories.</p></article>
-            </div>
-        </section>
-
-        <section class="pricing section-shell" id="pricing">
+        <section class="flow section-shell" id="flow" aria-labelledby="flow-title">
             <div>
-                <p class="eyebrow">Simple plans</p>
-                <h2>Start free, upgrade when ready</h2>
-                <p>Promote a Telegram job-alert channel today and connect paid resources when your audience needs more templates.</p>
+                <p class="eyebrow">Ride flow</p>
+                <h2 id="flow-title">The MVP follows one clear trip lifecycle.</h2>
+                <p>Each trip should move through explicit statuses so mobile apps, admin dashboards, notifications, and payments always agree on the same ride state.</p>
             </div>
-            <div class="price-card">
-                <span>Pro Pack</span>
-                <strong>$9</strong>
-                <p>Premium templates, cover letter scripts, and interview trackers.</p>
-                <a class="button primary" href="https://payhip.com/YourProPack" target="_blank" rel="noreferrer">Get Pro Pack</a>
+            <ol class="timeline">
+                <li><strong>Request</strong><span>Passenger selects pickup, destination, and requests a ride.</span></li>
+                <li><strong>Match</strong><span>Nearby eligible online drivers receive the request.</span></li>
+                <li><strong>Accept</strong><span>The first driver acceptance locks the trip and notifies the passenger.</span></li>
+                <li><strong>Pickup</strong><span>Driver location updates power the driver-coming screen.</span></li>
+                <li><strong>Trip</strong><span>Driver starts and completes the trip with auditable timestamps.</span></li>
+                <li><strong>Closeout</strong><span>Passenger pays cash, then both sides can rate and review history.</span></li>
+            </ol>
+        </section>
+
+        <section class="architecture section-shell" id="architecture">
+            <div class="section-heading compact">
+                <p class="eyebrow">System architecture</p>
+                <h2>Separate the marketplace into focused services and clients.</h2>
+                <p>The recommended first build is a Flutter app pair, a Node.js API, PostgreSQL, realtime location channels, Firebase Cloud Messaging, and a web admin dashboard.</p>
+            </div>
+            <div class="architecture-grid">
+                <article><span>Mobile</span><h3>Flutter Passenger & Driver Apps</h3><p>Shared design system with role-specific screens for booking, accepting, tracking, trip actions, profile, history, and earnings.</p></article>
+                <article><span>API</span><h3>Node.js Backend</h3><p>Owns users, drivers, vehicles, trips, fare rules, payments, ratings, notification triggers, and admin permissions.</p></article>
+                <article><span>Data</span><h3>PostgreSQL</h3><p>Stores normalized records for users, drivers, vehicles, trips, payments, ratings, notifications, documents, and audit logs.</p></article>
+                <article><span>Realtime</span><h3>WebSockets or Managed Realtime</h3><p>Streams driver availability, ride offers, ride status changes, and live coordinates during pickup and active trips.</p></article>
+                <article><span>Maps</span><h3>Google Maps or Mapbox</h3><p>Provides geocoding, map display, distance estimates, route previews, and driver navigation handoff.</p></article>
+                <article><span>Ops</span><h3>Admin Dashboard</h3><p>Hosted on Vercel with views for approvals, passengers, trips, payments, reports, fare settings, and support actions.</p></article>
             </div>
         </section>
 
-        <section class="join section-shell" id="join">
-            <p class="eyebrow">Join the alert list</p>
-            <h2>Get new opportunities where you already chat.</h2>
-            <p>Connect this call-to-action to your Telegram channel, newsletter, or community signup flow.</p>
-            <a class="button primary" href="https://t.me/YourTelegramChannel" target="_blank" rel="noreferrer">Join Telegram</a>
+        <section class="section-shell section-heading" id="data-model">
+            <p class="eyebrow">Database foundation</p>
+            <h2>Start with the tables that make trip state auditable.</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead><tr><th>Table</th><th>Purpose</th><th>Key fields</th></tr></thead>
+                    <tbody>
+                        <tr><td>Users</td><td>Passenger, driver, and admin accounts</td><td>role, phone, email, status</td></tr>
+                        <tr><td>Drivers</td><td>Driver profile and approval state</td><td>user_id, approval_status, rating, online_status</td></tr>
+                        <tr><td>Vehicles</td><td>Driver vehicle records</td><td>driver_id, plate, model, color</td></tr>
+                        <tr><td>Trips</td><td>Full ride lifecycle</td><td>passenger_id, driver_id, status, pickup, destination, fare</td></tr>
+                        <tr><td>Payments</td><td>Cash-first trip settlement</td><td>trip_id, method, amount, status</td></tr>
+                        <tr><td>Ratings</td><td>Post-trip trust signals</td><td>trip_id, reviewer_id, reviewee_id, score</td></tr>
+                        <tr><td>Notifications</td><td>Delivery and read tracking</td><td>user_id, channel, payload, sent_at</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="roadmap section-shell" id="roadmap">
+            <div class="section-heading compact">
+                <p class="eyebrow">Product roadmap</p>
+                <h2>Build the marketplace in controlled releases.</h2>
+            </div>
+            <div class="roadmap-grid">
+                <article><span>Version 1</span><h3>MVP ride loop</h3><p>Login, register, request ride, driver accept ride, live tracking, and trip complete.</p></article>
+                <article><span>Version 2</span><h3>Growth features</h3><p>Ride scheduling, promo codes, wallet, referral system, push notifications, and driver ratings.</p></article>
+                <article><span>Version 3</span><h3>Expansion</h3><p>Business accounts, airport booking, ride sharing, AI route optimization, and analytics.</p></article>
+            </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <a class="logo" href="#top"><span>CP</span>CareerPulse</a>
-        <p>Built for job seekers who want faster alerts, better CVs, and clearer next steps.</p>
+        <a class="logo" href="#top"><span>RC</span>RideConnect</a>
+        <p>Planning-first ride marketplace blueprint for passengers, drivers, and admins.</p>
     </footer>
 
     <script src="script.js"></script>
